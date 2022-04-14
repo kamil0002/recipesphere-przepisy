@@ -4,6 +4,6 @@ Aplikacja służy do przeglądania przepisów pobieranych z API oraz dodawania w
 
 #### Wykonana w czystym JS'ie.
 
-```text
+```
 Wersja live - (https://recipesphere.netlify.app)
 ```
