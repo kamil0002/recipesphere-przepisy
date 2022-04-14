@@ -1,0 +1,13 @@
+{
+  "name": "recipesphere",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {},
+  "author": "kamil",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.1.0"
+  }
+}

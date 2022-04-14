@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RecipeSphere</title>
+  <meta name="keywords" content="recipes, food, delicious, beef, desserts, cooking, cook, baking" />
+  <link rel="shortcut icon" href="./src/images/chef-hat.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./src/css/style.css" type="text/css" />
+  <script src="./src/js/index.js" defer></script>
+</head>
+
+<body>
+  <nav class="nav">
+    <h1>RecipeSphere - cook your best meal</h1>
+    <div class="nav__hamburger">
+      <span></span>
+    </div>
+    <div class="nav__bg nav__bg--hidden"></div>
+    <div class="nav-mobile">
+      <ul class="nav-mobile__list nav-mobile__list--disabled">
+        <li class="nav-mobile__item">Home</li>
+        <li class="nav-mobile__item">Recipes</li>
+        <li class="nav-mobile__item">About us</li>
+      </ul>
+    </div>
+
+    <ul class="nav-desktop__list">
+      <li class="nav-desktop__item">
+        Home
+        <div class="nav-desktop__item__bar nav-desktop__item__bar--active"></div>
+      </li>
+      <li class="nav-desktop__item">
+        Recipes
+        <div class="nav-desktop__item__bar"></div>
+      </li>
+      <li class="nav-desktop__item">
+        About us
+        <div class="nav-desktop__item__bar"></div>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="bg-video">
+    <video class="bg-video__body" autoplay loop muted>
+      <source src="./src/images/bg-video.mp4" type="video/mp4" />
+      "Video is not supported!"
+    </video>
+  </div>
+  <!-- Home section view -->
+  <div class="home-view">
+    <div class="get-started">
+      <div class="get-started__header">
+        <h2>
+          Find the best recipes for your meal
+          <span>...and share yours</span>
+        </h2>
+      </div>
+
+      <div class="get-started__action">
+        <p>Don't wait, jump straight to the recipes</p>
+        <div class="button-wrapper">
+          <a class="button-primary" href="#">Get Started</a>
+          <svg width="38" height="38" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M25 3C21.46 3 18.34 5.34 17.34 8.74C16.28 8.26 15.16 8 14 8C11.8783 8 9.84344 8.84285 8.34315 10.3431C6.84285 11.8434 6 13.8783 6 16C6.00474 17.7717 6.59599 19.4919 7.68144 20.8921C8.76689 22.2924 10.2854 23.2938 12 23.74V38H38V23.74C41.52 22.82 44 19.64 44 16C44 13.8783 43.1571 11.8434 41.6569 10.3431C40.1566 8.84285 38.1217 8 36 8C34.84 8 33.72 8.26 32.66 8.74C31.66 5.34 28.54 3 25 3V3ZM24 21H26V35H24V21ZM18 25H20V35H18V25V25ZM30 25H32V35H30V25ZM12 40V42C12 42.5304 12.2107 43.0391 12.5858 43.4142C12.9609 43.7893 13.4696 44 14 44H36C36.5304 44 37.0391 43.7893 37.4142 43.4142C37.7893 43.0391 38 42.5304 38 42V40H12Z"
+              fill="white" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider">
+      <!-- Slide 1 -->
+      <div class="slider__slide slider__slide--active slider__slide--1">
+        <div>
+          <img src="./src/images/chef-1.png" alt="chef photo" />
+          <div class="slider__slide--1__shadow"></div>
+        </div>
+        <div class="slider__slide--1__description">
+          <p>
+            You can find here also my recipes, best site which collect best
+            world recipes<br />
+            ~ Joanna Macharta
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slider__slide slider__slide--disabled slider__slide--2">
+        <div>
+          <img src="./src/images/chef-2.png" alt="chef photo" />
+          <div class="slider__slide--2__shadow"></div>
+        </div>
+        <div class="slider__slide--2__description">
+          <p>
+            Best world recipes, I highly recommend this page<br />
+            ~ Augosto Param
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slider__slide slider__slide--disabled slider__slide--3">
+        <div>
+          <img src="./src/images/chef-3.png" alt="chef photo" />
+          <div class="slider__slide--3__shadow"></div>
+        </div>
+        <div class="slider__slide--3__description">
+          <p>
+            I found this page very inspirational for my guests in Canada<br />
+            ~ Lucas Martin
+          </p>
+        </div>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="slider__slide slider__slide--disabled slider__slide--4">
+        <div>
+          <img src="./src/images/chef-4.png" alt="chef photo" />
+          <div class="slider__slide--4__shadow"></div>
+        </div>
+        <div class="slider__slide--4__description">
+          <p>
+            I appeared here as an amateur, this recipes base helped me grow a
+            lot!<br />
+            ~ Angela Barabo
+          </p>
+        </div>
+      </div>
+
+      <div class="slider__navigation">
+        <div class="slider__navigation__item">
+          <span class="slider__navigation__item--active" data-slide="1"></span>
+        </div>
+        <div class="slider__navigation__item">
+          <span class="slider__navigation__item--disabled" data-slide="2"></span>
+        </div>
+        <div class="slider__navigation__item">
+          <span class="slider__navigation__item--disabled" data-slide="3"></span>
+        </div>
+        <div class="slider__navigation__item">
+          <span class="slider__navigation__item--disabled" data-slide="4"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- About section view -->
+  <div class="aboutus-view">
+    <div class="creators-info">
+      <h2 class="creators-info__header">Who exactely are we?</h2>
+      <p class="creators-info__description">
+        We are a group of people who love cooking. Our website's purpose is
+        quite simple - help everyone find recipes for delicious meals
+        delivered by the best world chefs. We want all people that are
+        visiting our page to really start cooking for themselves, we want to
+        encourage You all to stop eating trash food in restaurants, and cook
+        fantastic meals with us! Don't wait too long, let's find something for
+        yourself
+      </p>
+      <div class="button-wrapper">
+        <a class="button-primary" href="#">Get Started</a>
+        <svg width="36" height="36" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M25 3C21.46 3 18.34 5.34 17.34 8.74C16.28 8.26 15.16 8 14 8C11.8783 8 9.84344 8.84285 8.34315 10.3431C6.84285 11.8434 6 13.8783 6 16C6.00474 17.7717 6.59599 19.4919 7.68144 20.8921C8.76689 22.2924 10.2854 23.2938 12 23.74V38H38V23.74C41.52 22.82 44 19.64 44 16C44 13.8783 43.1571 11.8434 41.6569 10.3431C40.1566 8.84285 38.1217 8 36 8C34.84 8 33.72 8.26 32.66 8.74C31.66 5.34 28.54 3 25 3V3ZM24 21H26V35H24V21ZM18 25H20V35H18V25V25ZM30 25H32V35H30V25ZM12 40V42C12 42.5304 12.2107 43.0391 12.5858 43.4142C12.9609 43.7893 13.4696 44 14 44H36C36.5304 44 37.0391 43.7893 37.4142 43.4142C37.7893 43.0391 38 42.5304 38 42V40H12Z"
+            fill="white" />
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- Recipes section view -->
+  <div class="recipes-view">
+    <div class="recipes-view__backdrop recipes-view__backdrop--hidden"></div>
+    <!-- Flying nav -->
+    <div class="flying-nav">
+      <ul class="flying-nav__items">
+        <li class="flying-nav__item flying-nav__item--add">
+          <img src="./src/images/add_recipe.svg" alt="Add recipe" />
+        </li>
+        <li class="flying-nav__item flying-nav__item--bookmark">
+          <img src="./src/images/display_boomarks.svg" alt="Display bookmarks" />
+        </li>
+      </ul>
+    </div>
+
+    <div class="bookmarked-recipes bookmarked-recipes--hidden">
+      <ul class="bookmarked-recipes__list">
+        <li class="bookmarked-recipes__empty">You don't have any bookmarks yet!</li>
+      </ul>
+    </div>
+
+    <div class="recipes-nav">
+      <ul class="recipes-nav__top-row">
+        <li class="recipes-nav__input">
+          <input type="text" class="recipes-nav__search" placeholder="Search all categories" />
+          <img src="./src/images/magnifying_glass.svg" alt="search-glass" />
+        </li>
+        <li class="recipes-nav__item recipes-nav__item--top recipes-nav__item--active" data-type="category">Search by
+          category</li>
+        <li class="recipes-nav__item recipes-nav__item--top" data-type="region">Search by region</li>
+        <li class="recipes-nav__item recipes-nav__item--top" data-type="random">Generate random meal</li>
+        <li class="recipes-nav__item recipes-nav__item--top" data-type="your-meals">Your Meals</li>
+      </ul>
+      <ul class="recipes-nav__bottom-row">
+        <li class="recipes-nav__item recipes-nav__item--bottom recipes-nav__item--active">Beef</li>
+        <li class="recipes-nav__item recipes-nav__item--bottom">Breakfast</li>
+        <li class="recipes-nav__item recipes-nav__item--bottom">Chicken</li>
+        <li class="recipes-nav__item recipes-nav__item--bottom">Dessert</li>
+        <li class="recipes-nav__item recipes-nav__item--bottom">Goat</li>
+        <li class="recipes-nav__item recipes-nav__item--bottom">Lamb</li>
+        <li class="recipes-nav__item recipes-nav__item--bottom">Miscellaneous</li>
+        <li class="recipes-nav__item recipes-nav__item--bottom">Pasta</li>
+        <li class="recipes-nav__item recipes-nav__item--bottom">Pork</li>
+        <li class="recipes-nav__item recipes-nav__item--bottom">Seafood</li>
+        <li class="recipes-nav__item recipes-nav__item--bottom">Side</li>
+      </ul>
+    </div>
+    <!-- RECIPES LIST -->
+    <div class="recipes-wrapper">
+      <ul class="recipes-list"></ul>
+    </div>
+    <!-- Pagination -->
+    <div class="recipes-pagination"></div>
+    <div class="form-wrapper">
+      <h2 class="form-title">Add your own recipe</h2>
+      <form class="form" autocomplete="off">
+        <div class="form__data">
+          <div class="form__description">
+            <h3 class="form__description__header">Description</h3>
+            <div class="form__group">
+              <input class="form__input form__input--description" id="name" type="text" placeholder="Meal name" />
+              <label class="form__label" for="name">Meal name</label>
+              <span class="input-invalid-info input-invalid-info--hidden">Name should have at least 3 characters</span>
+            </div>
+            <div class="form__group">
+              <input class="form__input form__input--description" id="img" type="text" placeholder="Image link" />
+              <label class="form__label" for="img">Image link</label>
+            </div>
+            <div class="form__group">
+              <textarea class="form__input form__input--description" id="recipe-desc"
+                placeholder="Recipe description*"></textarea>
+              <label class="form__label" for="recipe-desc">Recipe description*</label>
+              <span class="input-invalid-info input-invalid-info--hidden">Dscription should have between 20 and 300
+                words</span>
+            </div>
+          </div>
+          <div class="form__ingredients">
+            <h3 class="form__ingredients__header">Ingredients</h3>
+            <div class="form__ingredients__row">
+              <div class="form__ingredients__col">
+                <div class="form__group">
+                  <input class="form__input form__input--ingredient" id="ing1" type="text" placeholder="Ingredient 1" />
+                  <label class="form__label" for="ing1">Ingredient 1</label>
+                </div>
+                <div class="form__group">
+                  <input class="form__input form__input--ingredient" id="ing2" type="text" placeholder="Ingredient 2" />
+                  <label class="form__label" for="ing2">Ingredient 2</label>
+                </div>
+                <div class="form__group">
+                  <input class="form__input form__input--ingredient" id="ing3" type="text" placeholder="Ingredient 3" />
+                  <label class="form__label" for="ing3">Ingredient 3</label>
+                </div>
+                <div class="form__group">
+                  <input class="form__input form__input--ingredient" id="ing4" type="text" placeholder="Ingredient 4" />
+                  <label class="form__label" for="ing4">Ingredient 4</label>
+                  <span class="input-invalid-info input-invalid-info--hidden">You must add at least 4 ingredients</span>
+                </div>
+              </div>
+              <div class="form__ingredients__col">
+                <div class="form__group">
+                  <input class="form__input form__input--ingredient" id="ing5" type="text" placeholder="Ingredient 5" />
+                  <label class="form__label" for="ing5">Ingredient 5</label>
+                </div>
+                <div class="form__group">
+                  <input class="form__input form__input--ingredient" id="ing6" type="text" placeholder="Ingredient 6" />
+                  <label class="form__label" for="ing6">Ingredient 6</label>
+                </div>
+                <div class="form__group">
+                  <input class="form__input form__input--ingredient" id="ing7" type="text" placeholder="Ingredient 7" />
+                  <label class="form__label" for="ing7">Ingredient 7</label>
+                </div>
+                <div class="form__group">
+                  <input class="form__input form__input--ingredient" id="ing8" type="text" placeholder="Ingredient 8" />
+                  <label class="form__label" for="ing8">Ingredient 8</label>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="form__btn" type="submit">Add</button>
+      </form>
+      <pre class="additional-input-info">
+        * min 20 words, 
+          max 300 words
+        </pre>
+    </div>
+    <!-- How cook -->
+
+    <div class="recipe__view hide-recipe el-gone">
+      <div class="recipe__how-cook"></div>
+      <div class="recently-viewed">
+        <h3 class="recently-viewed__header">Recently viewed</h3>
+        <!-- Recently viewed recipes -->
+        <ul class="recipes-list__recently"></ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
